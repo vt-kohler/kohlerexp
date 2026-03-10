@@ -1,5 +1,5 @@
 #Fusion Spark base image
-FROM lucidworks/fusion-spark:5.9.15
+FROM lucidworks/fusion-spark:5.9.14
  
 # Switch to root user
 USER root
@@ -10,4 +10,5 @@ RUN pip3 install --upgrade pip && pip3 install --no-cache-dir tensorflow torch t
 # Switch back to the default non-root user
 
 USER 1099
+
 
